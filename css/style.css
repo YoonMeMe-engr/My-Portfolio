@@ -1,0 +1,157 @@
+:root {
+    --primary: #7fb8f9;
+    --secondary: #ffc448;
+    --light: #FAFAFB;
+    --dark: #12141D;
+    --danger: #e34c26;
+    --info: #4345d4;
+    --warning: #dfd43a;
+    --success: #b743d4;
+}
+
+.roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.my-6 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+/* Home Start */
+#home {
+    background: url(../Img/bg-header.png) left top no-repeat;
+}
+
+#home h1 {
+    font-size: 70px;
+}
+
+.font {
+    font-size: 50px;
+}
+
+.typed-cursor {
+    font-size: 50px;
+    color: var(--secondary);
+}
+
+.btn-play {
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 26px;
+    border-radius: 100%;
+    border: none;
+    outline: none!important;
+    padding: 18px 20px 20px 28px;
+    background: var(--secondary);
+}
+
+.btn-play::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: var(--secondary);
+    border-radius: 100%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+.btn-play::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 100%;
+    transition: all 200ms;
+}
+
+.btn-play span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    left: -9px;
+    top: -9px;
+    border-left: 15px solid var(--secondary);
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
+    }
+}
+
+.modal-video .modal-dialog {
+    max-width: 800px;
+    margin: 60px auto 0 auto;
+}
+
+.modal-video .btn-close {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+/* Home End */
+
+/* About Start */
+.fonts {
+    font-size: 10rem;
+    line-height: 9rem;
+}
+
+.years {
+    letter-spacing: 40px;
+    margin-right: -40px;
+}
+/* About End */
+
+/* Skills Start */
+.progress {
+    height: 10px;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    width: 0;
+    border-radius: 10px;
+    transition: 3s;
+}
+
+#skills .tab-content hr {
+    width: 30px;
+    height: 3px;
+}
+
+#skills .tab-content h5 {
+    background: linear-gradient(0deg,#7fb8f9,#ffc448);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Skills End */
