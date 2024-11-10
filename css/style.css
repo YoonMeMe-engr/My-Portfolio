@@ -155,3 +155,62 @@
     -webkit-text-fill-color: transparent;
 }
 /* Skills End */
+
+/* Services Start */
+.bg-icon {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../Img/Services.png) center center no-repeat;
+    background-size: cover;
+}
+
+#services h4 {
+    background: linear-gradient(0deg,#7fb8f9,#ffc448);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Services End */
+
+/* Portfolio Start */
+/* #portfolio-filters li a {
+    display: inline-block;
+    font-weight: 500;
+    color: var(--dark);
+    cursor: pointer;
+    transition: .5s;
+    border-bottom: 2px solid transparent;
+}
+
+#portfolio-filters li a:hover,
+#portfolio-filters li a.active {
+    color: var(--primary);
+    border-color: var(--primary);
+} */
+
+.portfolio-img {
+    position: relative;
+}
+
+.portfolio-btn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(127, 184, 249, 0.9);
+    opacity: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 30px;
+    padding-bottom: 100px!important;
+    transition: .5s;
+}
+
+.portfolio-item:hover .portfolio-btn {
+    opacity: 1;
+    padding-bottom: 30px!important;
+}
+/* Portfolio End */

@@ -25,3 +25,7 @@ $('.skill').waypoint(function () {
     });
 }, {offset: '80%'});
 // Skills End
+
+// Projects Start
+
+// Project End
