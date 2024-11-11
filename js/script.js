@@ -27,5 +27,14 @@ $('.skill').waypoint(function () {
 // Skills End
 
 // Projects Start
+var portfolioIsotope = $('.portfolio-container').isotope({
+  itemSelector: '.portfolio-item',
+  layoutMode: 'fitRows'
+});
+$('#portfolio-filters li').on('click', function () {
+  $("#portfolio-filters li").removeClass('active');
+  $(this).addClass('active');
 
+  portfolioIsotope.isotope({filter: $(this).data('filter')});
+});
 // Project End

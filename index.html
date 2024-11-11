@@ -176,7 +176,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
                     <ul class="nav nav-pills rounded border border-2 border-primary mb-4">
-                        <li class="nav-tem w-50">
+                        <li class="nav-item w-50">
                           <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Experience</button>
                         </li>
                         <li class="nav-item w-50">
@@ -350,19 +350,73 @@
             </div>
         </div>
     </div>
-    <!-- Sevices End -->
+    <!-- Services End -->
 
     <!-- My Projects Start -->
-    <div class="container-xxl" id="projects">
+    <!-- <div class="container-xxl" id="projects">
         <div class="container">
             <div class="row d-flex align-items-center mb-5 wow fadeInUp" data-wow-delay=".1s">
                 <div class="col-lg-6">
                     <h1 class="text-secondary">My Projects</h1>
                 </div>
+                <div class="col-lg-6">
+                    <div class="button-group">
+                        <button type="button" class="active me-5">All Projects</button>
+                        <button type="button" class="me-5" data-filter="web-design">Web Design</button>
+                        <button type="button" class="" data-filter="ui/ux-design">UI/UX Design</button>
+                    </div>
+                </div>
+            </div>  
+            <div class="row gx-3 gy-5">
+                <div class="col-lg-4">
+                    <div class="web-design">
+                        <img class="img-fluid rounded" src="./Img/Project1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ui/ux-design">
+                        <img class="img-fluid rounded" src="./Img/Project5.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="web-design">
+                        <img class="img-fluid rounded" src="./Img/Project2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ui/ux-design">
+                        <img class="img-fluid rounded" src="./Img/Project6.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="web-design">
+                        <img class="img-fluid rounded" src="./Img/Project3.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="web-design">
+                        <img class="img-fluid rounded" src="./Img/Project4.png" alt="">
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div> -->
+    
+    <div class="container-xxl py-6 pt-5" id="project">
+        <div class="container">
+            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">My Projects</h1>
+                </div>
                 <div class="col-lg-6 text-lg-end">
-                    
-                   
-            <!-- <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay=".1s">
+                    <ul class="list-inline mx-n3 mb-0" id="portfolio-filters">
+                        <li class="mx-3 active" data-filter="*">All Projects</li>
+                        <li class="mx-3" data-filter=".first">Web Design</li>
+                        <li class="mx-3" data-filter=".second">UI/UX Design</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-4 col-md-6 portfolio-item first">
                     <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="./Img/Project1.png" alt="">
@@ -403,21 +457,21 @@
                     <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="./Img/Project3.png" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="./Img/Project3.png data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="./Img/Project3.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portflio-item first">
+                <div class="col-lg-4 col-md-6 portfolio-item second">
                     <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="./Img/Project4.png" alt="">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="./Img/Project4.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-squaore btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
     <!-- My Projects End -->
@@ -428,7 +482,7 @@
     <script src="./lib/counterup/counterup.min.js"></script>
     <script src="./lib/waypoints/waypoints.min.js"></script>
     <script src="./lib/wow/wow.min.js"></script>
-    <script src="./lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
