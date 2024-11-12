@@ -38,3 +38,13 @@ $('#portfolio-filters li').on('click', function () {
   portfolioIsotope.isotope({filter: $(this).data('filter')});
 });
 // Project End
+
+// Testimonial Start
+$(".testimonial-carousel").owlCarousel({
+  autoplay: true,
+  smartSpeed: 1000,
+  items: 1,
+  dots: true,
+  loop: true,
+});
+// Testimonial End
