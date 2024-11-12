@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -555,15 +555,15 @@
                         <h1>Nay Pyi Taw, Myanmar</h1>
                     </div>
                     <div class="border-bottom py-3">
-                        <h6 class="">Call Me:</h6>
+                        <h6 class="text-muted">Call Me:</h6>
                         <h1 class="">+95 9448541672</h1>
                     </div>
                     <div class="border-bottom py-3">
-                        <h6 class="">Mail Me:</h6>
+                        <h6 class="text-muted">Mail Me:</h6>
                         <h1 class="">yoonmeme.engr@gmail.com</h1>
                     </div>
                     <div class="py-3">
-                        <h6 class="">Follow Me:</h6>
+                        <h6 class="text-muted">Follow Me:</h6>
                         <div class="d-flex align-items-center contact-icon">
                             <div class="d-flex justify-content-center align-items-center rounded bg-primary me-2">
                                 <a target="_blank" href="https://github.com/YoonMeMe-engr"><i class="fa-brands fa-github text-white"></i></a>
@@ -585,30 +585,36 @@
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="floatingText" placeholder="Your Name">
-                                    <label for="floatingText">Your Name</label>
+                                    <input type="text" class="form-control" id="floatingName" placeholder="Your Name" required>
+                                    <label for="floatingName">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                    <label for="floatingInput">Email address</label>
+                                    <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" required>
+                                    <label for="floatingEmail">Email address</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="floatingPhone" placeholder="Phone Number" required>
+                                    <label for="floatingPhone">Phone Number</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="floatingSubject" placeholder="Subject" required>
+                                    <label for="floatingSubject">Subject</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="floatingText" placeholder="Subject">
-                                    <label for="floatingText">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px;"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px;" required></textarea>
                                     <label for="floatingTextarea2">Meassage</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary px-4 py-2 rounded fs-5" type="button">Send Message</button>
+                                <button class="btn btn-primary px-4 py-2 rounded fs-5" type="submit">Send Message</button>
                             </div>
                         </div>
                     </form>
@@ -617,6 +623,31 @@
         </div>
     </div>
     <!-- Let's Work Together End -->
+
+    <!-- Map Start -->
+    <div class="map mt-5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60083.04179468556!2d96.04720913462339!3d19.747075825275395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c8bee4e3f117c1%3A0xd090ab50c9c24eda!2sNaypyidaw!5e0!3m2!1sen!2smm!4v1730359480027!5m2!1sen!2smm" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- Map End -->
+
+    <!-- Copy Right Start -->
+    <section class="container-fluid bg-dark">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-4">
+                <div class="text-white">
+                    <small>&copy; Ms. Yoon Me Me &amp; Nobody</small>
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-sun text-white pe-3"></i>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="changeTheme">
+                    </div>
+                    <i class="fa-solid fa-moon text-white ps-2"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Copy Right End -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>

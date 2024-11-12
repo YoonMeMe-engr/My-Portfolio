@@ -7,6 +7,7 @@
     --info: #4345d4;
     --warning: #dfd43a;
     --success: #b743d4;
+    --white: #fff;
 }
 
 .roboto-regular {
@@ -23,6 +24,21 @@
 .py-6 {
     padding-top: 6rem;
     padding-bottom: 6rem;
+}
+
+html[data-theme="light"] {
+    --ymm-bg-dark: var(--white);
+    --ymm-text-dark: var(--dark);
+}
+
+html[data-theme="dark"] {
+    --ymm-bg-dark: var(--dark);
+    --ymm-text-dark: var(var(--light))
+}
+
+body {
+    background-color: var(--ymm-bg-dark);
+    color: var(--ymm-text-dark);
 }
 
 /* Home Start */

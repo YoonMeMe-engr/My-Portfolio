@@ -48,3 +48,37 @@ $(".testimonial-carousel").owlCarousel({
   loop: true,
 });
 // Testimonial End
+
+// Let's Work Together Start
+
+// Let's Work Together End
+
+// Footer Start
+const changeTheme = document.getElementById("changeTheme");
+
+changeTheme.addEventListener("change", () => {
+  const theme = localStorage.getItem("data-theme");
+  if (theme === "dark") {
+    changeToLight();
+  } else {
+    changeToDark();
+  }
+});
+
+const theme = localStorage.getItem("data-theme");
+if (theme === "dark") {
+  changeToDark();
+} else {
+  changeToLight();
+}
+
+const changeToDark = () => {
+  document.documentElement.setAttribute("data-theme", "dark");
+  localStorage.setItem("data-theme", "dark")
+}
+
+const changeToLight = () => {
+  document.documentElement.setAttribute("data-theme", "light");
+  localStorage.setItem("data-theme", "light")
+}
+// Footer End
