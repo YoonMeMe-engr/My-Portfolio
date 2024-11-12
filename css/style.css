@@ -303,8 +303,9 @@
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    bottom: -20px;
-    right: 303px;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
     background: white;
 }
 /* Testimonial End */
