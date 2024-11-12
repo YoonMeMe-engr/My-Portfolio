@@ -225,10 +225,6 @@
     transition: 0.5s;
 }
 
-.team-img:hover img {
-    opacity: .7;
-}
-
 .engineer-teams {
     position: absolute;
     left: 0;
