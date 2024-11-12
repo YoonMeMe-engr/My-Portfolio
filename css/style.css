@@ -215,3 +215,42 @@
     padding-bottom: 30px !important;
 }
 /* Portfolio End */
+
+/* Team Start */
+.team-img {
+    position: relative;
+}
+
+.team-img img {
+    transition: 0.5s;
+}
+
+.team-img:hover img {
+    opacity: .7;
+}
+
+.engineer-teams {
+    position: absolute;
+    left: 0;
+    right: 60px;
+    bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;    
+    transition: 0.5s;
+}
+
+.team-img:hover .engineer-teams {
+    right: 30px;
+    opacity: 1;
+}
+
+.team-img .engineer-teams div {
+    transition: 0.5s;
+}
+
+.team-img:hover .engineer-teams div {
+    margin-left: 30px;
+}
+/* Team End */
