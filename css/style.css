@@ -250,3 +250,34 @@
     margin-left: 30px;
 }
 /* Team End */
+
+/* Testimonial Start */
+.testimonial-left, .testimonial-right {
+    position: relative;
+}
+
+.testimonial-left img, .testimonial-right img {
+    position: absolute;
+    padding: 5px;
+    border: 1px solid var(--primary);
+    border-radius: 100%;
+}
+
+.testimonial-left img:nth-child(1), 
+.testimonial-right img:nth-child(3) {
+    width: 70px;
+    height: 70px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.testimonial-left img:nth-child(2), 
+.testimonial-right img:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 10%;
+    transform: translateX(-50%);
+}
+/* Testimonial End */
