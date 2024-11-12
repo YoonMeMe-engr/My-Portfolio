@@ -1,6 +1,12 @@
 // WoW
 new WOW().init();
 
+// Spinner Start
+window.addEventListener("load", () => {
+  document.querySelector(".lds-ring").style.display = "none"; 
+})
+// Spinner End
+
 // Home Start
 const typed = new Typed(".multiple-text", {
     strings: ["IT Engineer" , "Telecom Engineer" , "Web Development Engineer" , "Apps Designer"],
@@ -82,3 +88,8 @@ const changeToLight = () => {
   localStorage.setItem("data-theme", "light")
 }
 // Footer End
+
+// Back to Top Start
+
+
+// Back to Top End
