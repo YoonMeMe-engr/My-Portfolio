@@ -26,21 +26,6 @@
     padding-bottom: 6rem;
 }
 
-html[data-theme="light"] {
-    --dh-bg-dark: var(--white);
-    --dh-text-dark: var(--pdf-zinc-900);
-  }
-  
-  html[data-theme="dark"] {
-    --dh-bg-dark: var(--pdf-zinc-900);
-    --dh-text-dark: var(--pdf-slate-200);
-  }
-  
-  body {
-    background-color: var(--dh-bg-dark);
-    color: var(--dh-text-dark);
-  }
-
 /* Spinner Start */
 .lds-ring {
     display: flex;
@@ -118,30 +103,23 @@ html[data-theme="light"] {
 }
 /* Button End */
 
+body {
+	background-color: white;
+}
+
+body.dark {
+	background-color: var(--dark);
+}
+
 /* Navbar Start */
-.navbar {
-    background-color: var(--dh-bg-dark)!important;
-}
-
-.navbar {
-    background-color: var(--dh-bg-dark)!important;
-}
-
-.navbar .navbar-nav .nav-link {
-    color: var(--dh-text-dark);
-}
-
-.navbar .navbar-nav .nav-link {
-    color: var(--dh-text-dark);
-}
-
 .navbar.fixed-top {
     display: none;
     transition: .5s;
 }
 
 .navbar .navbar-nav .nav-link {
-    /* padding: 20px 15px; */
+    padding: 20px 15px;
+    color: var(--dark);
     font-size: 18px;
     font-weight: 600;
     outline: none;
@@ -156,22 +134,15 @@ html[data-theme="light"] {
 
 @media screen and (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link {
-        /* padding: 10px 0; */
+        padding: 10px 0;
     }
 }
 /* Navbar End */
 
 /* Home Start */
 #home {
-    background-color: var(--dh-bg-dark);
-}
-
-#home {
-    background-color: var(--light);
-}
-
-#home {
     background: url(../Img/bg-header.png) left top no-repeat;
+    background-color: var(--light);
 }
 
 #home h1 {
@@ -301,14 +272,6 @@ html[data-theme="light"] {
 /* Skills End */
 
 /* Services Start */
-#services {
-    background-color: var(--dh-bg-dark);
-}
-
-#services {
-    background-color: var(--light);
-}
-
 .bg-icon {
     width: 100px;
     height: 100px;
@@ -330,7 +293,6 @@ html[data-theme="light"] {
 #portfolio-filters li {
     display: inline-block;
     font-weight: 500;
-    color: var(--dark);
     cursor: pointer;
     transition: .5s;
     border-bottom: 2px solid transparent;
@@ -512,6 +474,11 @@ html[data-theme="light"] {
     justify-content: center;
     align-items: center;
     font-size: 20px;
+}
+
+#contact p {
+    font-size: 30px;
+    font-weight: bold;
 }
 /* Contact End */
 

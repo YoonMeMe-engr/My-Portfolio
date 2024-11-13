@@ -113,44 +113,34 @@ $(".testimonial-carousel").owlCarousel({
 // Let's Work Together End
 
 // Footer Start
-const changeToDark = () => {
-  document.documentElement.setAttribute("data-theme", "dark");
-  document.querySelector(".navbar").classList.remove("shadow-lg");
-  document.querySelector(".navbar").classList.add("pdf-border-zinc-800");
-  localStorage.setItem("data-theme", "dark");
+var darkMode = false;
+const homeBg = document.getElementById("#home");
 
-  
-};
-
-const changeToLight = () => {
-  document.documentElement.setAttribute("data-theme", "light");
-  document.querySelector(".navbar").classList.add("shadow-lg");
-  document.querySelector(".navbar").classList.remove("border-bottom");
-  document.querySelector(".navbar").classList.remove("pdf-border-zinc-800");
-  localStorage.setItem("data-theme", "light");
-
-  
-};
-
-const changeTheme = document.getElementById("changeTheme");
-
-changeTheme.addEventListener("change", () => {
-  const theme = localStorage.getItem("data-theme");
-  if (theme === "dark") {
-    changeToLight();
-  } else {
-    changeToDark();
-  }
-});
-
-const theme = localStorage.getItem("data-theme");
-if (theme === "dark") {
-  changeToDark();
-  
-} else {
-  changeToLight();
-  
+// default to system setting
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+	darkMode = true;
 }
+
+// preference from localStorage should overwrite
+if (localStorage.getItem('theme') === 'dark') {
+	darkMode = true;
+  
+} else if (localStorage.getItem('theme') === 'light') {
+	darkMode = false;
+}
+
+if (darkMode) {
+	document.body.classList.toggle('dark');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+		document.body.classList.toggle('dark');
+    	localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+	});
+
+});
 // Footer End
 
 // Back to Top Start
