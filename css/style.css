@@ -26,13 +26,20 @@
     padding-bottom: 6rem;
 }
 
-/* body {
-    background-color: #fff;
-}
-
-body.dark {
-    background-color: #343a40;
-} */
+html[data-theme="light"] {
+    --dh-bg-dark: var(--white);
+    --dh-text-dark: var(--pdf-zinc-900);
+  }
+  
+  html[data-theme="dark"] {
+    --dh-bg-dark: var(--pdf-zinc-900);
+    --dh-text-dark: var(--pdf-slate-200);
+  }
+  
+  body {
+    background-color: var(--dh-bg-dark);
+    color: var(--dh-text-dark);
+  }
 
 /* Spinner Start */
 .lds-ring {
@@ -112,6 +119,22 @@ body.dark {
 /* Button End */
 
 /* Navbar Start */
+.navbar {
+    background-color: var(--dh-bg-dark)!important;
+}
+
+.navbar {
+    background-color: var(--dh-bg-dark)!important;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--dh-text-dark);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--dh-text-dark);
+}
+
 .navbar.fixed-top {
     display: none;
     transition: .5s;
@@ -119,7 +142,6 @@ body.dark {
 
 .navbar .navbar-nav .nav-link {
     /* padding: 20px 15px; */
-    color: var(--dark);
     font-size: 18px;
     font-weight: 600;
     outline: none;
@@ -140,6 +162,14 @@ body.dark {
 /* Navbar End */
 
 /* Home Start */
+#home {
+    background-color: var(--dh-bg-dark);
+}
+
+#home {
+    background-color: var(--light);
+}
+
 #home {
     background: url(../Img/bg-header.png) left top no-repeat;
 }
@@ -271,6 +301,14 @@ body.dark {
 /* Skills End */
 
 /* Services Start */
+#services {
+    background-color: var(--dh-bg-dark);
+}
+
+#services {
+    background-color: var(--light);
+}
+
 .bg-icon {
     width: 100px;
     height: 100px;
