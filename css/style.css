@@ -142,7 +142,7 @@ body.dark {
 /* Home Start */
 #home {
     background: url(../Img/bg-header.png) left top no-repeat;
-    background-color: var(--light);
+    /* background-color: var(--light); */
 }
 
 #home h1 {
@@ -477,7 +477,7 @@ body.dark {
 }
 
 #contact p {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 /* Contact End */
