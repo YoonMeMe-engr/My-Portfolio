@@ -104,7 +104,7 @@
 /* Button End */
 
 body {
-	background-color: white;
+	background-color: var(--white);
 }
 
 body.dark {
