@@ -7,6 +7,16 @@ window.addEventListener("load", () => {
 })
 // Spinner End
 
+// Navbar Start
+$(window).scroll(function () {
+  if($(this).scrollTop() > 300) {
+    $('.navbar').fadeIn('slow').css('display', 'flex');
+  } else {
+    $('.navbar').fadeIn('slow').css('display', 'none');
+  }
+})
+// Navbar End
+
 // Home Start
 const typed = new Typed(".multiple-text", {
     strings: ["IT Engineer" , "Telecom Engineer" , "Web Development Engineer" , "Apps Designer"],

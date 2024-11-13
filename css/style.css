@@ -91,6 +91,59 @@ body {
 }
 /* Spinner End */
 
+/* Button Start */
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-weight: normal;
+}
+/* Button End */
+
+/* Navbar Start */
+.navbar.fixed-top {
+    display: none;
+    transition: .5s;
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 20px 15px;
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+@media screen and (max-width: 991.98px) {
+    .navbar .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+}
+/* Navbar End */
+
 /* Home Start */
 #home {
     background: url(../Img/bg-header.png) left top no-repeat;
