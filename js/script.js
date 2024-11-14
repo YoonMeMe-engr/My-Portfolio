@@ -16,6 +16,11 @@ window.addEventListener("load", () => {
 //   }
 // })
 
+let menu = document.querySelector(".menu-icon");
+        menu.addEventListener("click", function() {
+            this.classList.toggle("show");
+});
+
 $(window).scroll(function () {
   if ($(this).scrollTop() > 300) {
       $('.navbar').fadeIn('slow').css('display', 'flex');
