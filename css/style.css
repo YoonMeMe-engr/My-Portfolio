@@ -103,12 +103,31 @@
 }
 /* Button End */
 
-body {
-	background-color: var(--white);
+.darkMode {
+    background-color: var(--dark);
 }
 
-body.dark {
-	background-color: var(--dark);
+.darkMode .lds-ring {
+    background-color: var(--dark);
+}
+
+.darkNav {
+    background: var(--white);
+}
+
+.darkMode .navbar .navbar-nav .nav-link {
+    color: var(--white);
+}
+
+.darkMode .darkNav {
+    background: var(--dark);
+    border-bottom: 1px solid #8f8d8d;
+}
+
+.darkMode #home,
+.darkMode #services,
+.darkMode #testimonial {
+    background-color: var(--dark);
 }
 
 /* Navbar Start */
@@ -142,7 +161,7 @@ body.dark {
 /* Home Start */
 #home {
     background: url(../Img/bg-header.png) left top no-repeat;
-    /* background-color: var(--light); */
+    background-color: var(--light);
 }
 
 #home h1 {
@@ -272,6 +291,10 @@ body.dark {
 /* Skills End */
 
 /* Services Start */
+#services {
+    background-color: var(--light);
+}
+
 .bg-icon {
     width: 100px;
     height: 100px;
@@ -366,6 +389,10 @@ body.dark {
 /* Team End */
 
 /* Testimonial Start */
+#testimonial {
+    background-color: var(--light);
+}
+
 .testimonial-left, .testimonial-right {
     position: relative;
 }
@@ -487,5 +514,7 @@ body.dark {
     position: fixed;
     right: 50px;
     bottom: 50px;
+    border: none;
+    outline: none;
 }
 /* Back to Top End */

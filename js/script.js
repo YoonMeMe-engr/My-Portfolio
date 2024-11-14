@@ -113,34 +113,26 @@ $(".testimonial-carousel").owlCarousel({
 // Let's Work Together End
 
 // Footer Start
-var darkMode = false;
-const homeBg = document.getElementById("#home");
+if(localStorage.getItem("theme") == "dark") {
+  setDarkMode();
 
-// default to system setting
-if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-	darkMode = true;
-}
+      if(document.getElementById("changeTheme").checked) {
+          localStorage.setItem("changeTheme", true)
+      }
+ }
 
-// preference from localStorage should overwrite
-if (localStorage.getItem('theme') === 'dark') {
-	darkMode = true;
-  
-} else if (localStorage.getItem('theme') === 'light') {
-	darkMode = false;
-}
+ function setDarkMode() {
+  let isDark = document.body.classList.toggle("darkMode");
 
-if (darkMode) {
-	document.body.classList.toggle('dark');
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-
-    document.getElementById('theme-toggle').addEventListener('click', () => {
-		document.body.classList.toggle('dark');
-    	localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
-	});
-
-});
+      if(isDark) {
+          setDarkMode.checked = true;
+          localStorage.setItem("theme", "dark");
+          document.getElementById("changeTheme").setAttribute("checked", "checked");
+      } else {
+          setDarkMode.checked = true;
+          localStorage.removeItem("theme", "dark");
+      }
+ }
 // Footer End
 
 // Back to Top Start
