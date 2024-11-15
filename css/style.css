@@ -205,17 +205,34 @@
     background-color: var(--light);
 }
 
-#home h1 {
-    font-size: 70px;
+@media screen and (min-width: 600px) {
+    #home h1 {
+        font-size: 70px;
+    }
+
+    .font {
+        font-size: 50px;
+    }
+
+    .typed-cursor {
+        font-size: 50px;
+        color: var(--secondary);
+    }
 }
 
-.font {
-    font-size: 50px;
-}
+@media screen and (max-width: 599px) {
+    #home h1 {
+        font-size: 50px;
+    }
 
-.typed-cursor {
-    font-size: 50px;
-    color: var(--secondary);
+    .font {
+        font-size: 30px;
+    }
+
+    .typed-cursor {
+        font-size: 30px;
+        color: var(--secondary);
+    }
 }
 
 .btn-play {
@@ -542,11 +559,6 @@
     justify-content: center;
     align-items: center;
     font-size: 20px;
-}
-
-#contact p {
-    font-size: 25px;
-    font-weight: bold;
 }
 /* Contact End */
 
