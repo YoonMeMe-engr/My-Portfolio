@@ -222,15 +222,15 @@
 
 @media screen and (max-width: 599px) {
     #home h1 {
-        font-size: 50px;
+        font-size: 70px;
     }
 
     .font {
-        font-size: 30px;
+        font-size: 50px;
     }
 
     .typed-cursor {
-        font-size: 30px;
+        font-size: 50px;
         color: var(--secondary);
     }
 }
