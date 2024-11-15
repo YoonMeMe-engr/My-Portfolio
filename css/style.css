@@ -239,7 +239,11 @@
     }
 
     .gitAcc {
-        font-size: 18px;
+        font-size: 15px;
+    }
+
+    #home a {
+        margin-right: 5px;
     }
 }
 
