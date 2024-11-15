@@ -76,33 +76,7 @@
 }
 /* Spinner End */
 
-/* Button Start */
-.btn-square {
-    width: 38px;
-    height: 38px;
-}
-
-.btn-sm-square {
-    width: 32px;
-    height: 32px;
-}
-
-.btn-lg-square {
-    width: 48px;
-    height: 48px;
-}
-
-.btn-square,
-.btn-sm-square,
-.btn-lg-square {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    font-weight: normal;
-}
-/* Button End */
-
+/* Dark Mode Start */
 .darkMode {
     background-color: var(--dark);
 }
@@ -133,6 +107,7 @@
 .darkMode #testimonial {
     background-color: var(--dark);
 }
+/* Dark Mode End */
 
 /* Navbar Start */
 .navbar.fixed-top {
@@ -144,7 +119,7 @@
     border: none;
 }
   
-.o-n:focus {
+.boxShadow:focus {
     box-shadow: none;
 }
 
@@ -246,12 +221,12 @@
 .btn-play {
     position: relative;
     display: block;
-    width: 16px;
-    height: 26px;
+    width: 60px;
+    height: 60px;
     border-radius: 100%;
     border: none;
     outline: none!important;
-    padding: 18px 20px 20px 28px;
+    padding: 20px;
     background: var(--secondary);
 }
 
@@ -291,8 +266,8 @@
     z-index: 3;
     width: 0;
     height: 0;
-    left: -9px;
-    top: -9px;
+    left: 5px;
+    top: -1px;
     border-left: 15px solid var(--secondary);
     border-top: 11px solid transparent;
     border-bottom: 11px solid transparent;
@@ -580,7 +555,7 @@
     position: fixed;
     right: 50px;
     bottom: 50px;
-    border: none;
-    outline: none;
+    border: none!important;
+    outline: none!important;
 }
 /* Back to Top End */
