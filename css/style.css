@@ -218,6 +218,10 @@
         font-size: 50px;
         color: var(--secondary);
     }
+
+    .gitAcc {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 599px) {
