@@ -230,11 +230,11 @@
     }
 
     .font {
-        font-size: 30px;
+        font-size: 15px;
     }
 
     .typed-cursor {
-        font-size: 30px;
+        font-size: 15px;
         color: var(--secondary);
     }
 
