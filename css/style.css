@@ -222,11 +222,76 @@
     .gitAcc {
         font-size: 30px;
     }
+
+    .btn-play {
+        position: relative;
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        border: none;
+        outline: none!important;
+        padding: 20px;
+        background: var(--secondary);
+    }
+    
+    .btn-play::before {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        display: block;
+        width: 60px;
+        height: 60px;
+        background: var(--secondary);
+        border-radius: 100%;
+        animation: pulse-border 1500ms ease-out infinite;
+    }
+    
+    .btn-play::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        display: block;
+        width: 60px;
+        height: 60px;
+        background: white;
+        border-radius: 100%;
+        transition: all 200ms;
+    }
+    
+    .btn-play span {
+        display: block;
+        position: relative;
+        z-index: 3;
+        width: 0;
+        height: 0;
+        left: 5px;
+        top: -1px;
+        border-left: 15px solid var(--secondary);
+        border-top: 11px solid transparent;
+        border-bottom: 11px solid transparent;
+    }
+    
+    @keyframes pulse-border {
+        0% {
+            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        }
+    
+        100% {
+            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
+        }
+    }
 }
 
 @media screen and (max-width: 599px) {
     #home h1 {
-        font-size: 70px;
+        font-size: 30px;
     }
 
     .font {
@@ -245,70 +310,69 @@
     #home a {
         margin-right: 5px;
     }
-}
 
-.btn-play {
-    position: relative;
-    display: block;
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    border: none;
-    outline: none!important;
-    padding: 20px;
-    background: var(--secondary);
-}
-
-.btn-play::before {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    display: block;
-    width: 60px;
-    height: 60px;
-    background: var(--secondary);
-    border-radius: 100%;
-    animation: pulse-border 1500ms ease-out infinite;
-}
-
-.btn-play::after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    display: block;
-    width: 60px;
-    height: 60px;
-    background: white;
-    border-radius: 100%;
-    transition: all 200ms;
-}
-
-.btn-play span {
-    display: block;
-    position: relative;
-    z-index: 3;
-    width: 0;
-    height: 0;
-    left: 5px;
-    top: -1px;
-    border-left: 15px solid var(--secondary);
-    border-top: 11px solid transparent;
-    border-bottom: 11px solid transparent;
-}
-
-@keyframes pulse-border {
-    0% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    .btn-play {
+        position: relative;
+        display: block;
+        width: 5px;
+        height: 5px;
+        background: var(--secondary);
+        border: none;
+        outline: none!important;
+        border-radius: 100%;
+        padding: 10px;
     }
 
-    100% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
+    .btn-play::before {
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: var(--primary);
+        content: "";
+        border-radius: 100%;
+        top: 50%;
+        left: 50%;
+        z-index: 0;
+        transform: translateX(-50%) translateY(-50%);
+        animation: pulse-border 1500ms ease-out infinite;
+    }
+
+    .btn-play::after {
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: var(--white);
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        content: "";
+        transform: translateX(-50%) translateY(-50%);
+        border-radius: 100%;
+        transition: all 200ms;
+    }
+
+    .btn-play span {
+        position: relative;
+        z-index: 2;
+        border-left: 9px solid var(--secondary);
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        width: 0;
+        height: 0;
+        display: block;
+        top: -5px;
+        left: -3px;
+    }
+
+    @keyframes pulse-border {
+        0% {
+            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        }
+        100% {
+            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
+        }
     }
 }
 
