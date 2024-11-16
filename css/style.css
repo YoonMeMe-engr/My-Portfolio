@@ -314,62 +314,63 @@
     .btn-play {
         position: relative;
         display: block;
-        width: 30px;
-        height: 30px;
-        background: var(--secondary);
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
         border: none;
         outline: none!important;
-        border-radius: 100%;
         padding: 10px;
+        background: var(--secondary);
     }
-
+    
     .btn-play::before {
+        content: "";
         position: absolute;
+        z-index: 0;
+        left: 40%;
+        top: 40%;
+        transform: translateX(-50%) translateY(-50%);
         display: block;
         width: 30px;
         height: 30px;
         background: var(--secondary);
-        content: "";
         border-radius: 100%;
-        top: 50%;
-        left: 50%;
-        z-index: 0;
-        transform: translateX(-50%) translateY(-50%);
         animation: pulse-border 1500ms ease-out infinite;
     }
-
+    
     .btn-play::after {
+        content: "";
         position: absolute;
+        z-index: 1;
+        left: 40%;
+        top: 40%;
+        transform: translateX(-50%) translateY(-50%);
         display: block;
         width: 30px;
         height: 30px;
         background: white;
-        z-index: 1;
-        top: 50%;
-        left: 50%;
-        content: "";
-        transform: translateX(-50%) translateY(-50%);
         border-radius: 100%;
         transition: all 200ms;
     }
-
+    
     .btn-play span {
+        display: block;
         position: relative;
         z-index: 3;
-        border-left: 9px solid var(--secondary);
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
         width: 0;
         height: 0;
-        display: block;
-        top: 0px;
-        left: 3px;
+        left: -5px;
+        top: -9px;
+        border-left: 10px solid var(--secondary);
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
     }
-
+    
     @keyframes pulse-border {
         0% {
             transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
         }
+    
         100% {
             transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
         }
