@@ -110,6 +110,11 @@
 
 .darkMode .card-color {
     background-color: var(--dark);
+    box-shadow: 5px 5px 5px 5px #7fb8f9;
+}
+
+.card-color {
+    background-color: var(--white);
 }
 /* Dark Mode End */
 
