@@ -110,7 +110,7 @@
 
 .darkMode .card-color {
     background-color: var(--dark);
-    box-shadow: 5px 5px 5px 5px #7fb8f9;
+    box-shadow: 3px 3px 3px 3px #7fb8f9;
 }
 
 .card-color {
