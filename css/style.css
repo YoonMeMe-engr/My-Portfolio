@@ -107,6 +107,10 @@
 .darkMode #testimonial {
     background-color: var(--dark);
 }
+
+.darkMode .card-color {
+    background-color: var(--dark);
+}
 /* Dark Mode End */
 
 /* Navbar Start */
